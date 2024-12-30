@@ -20,6 +20,7 @@ class _HomepageState extends State<Homepage> {
       builder: (context) {
         return AlertDialog(
           content: TextField(
+            keyboardType: TextInputType.number,
             controller: _controller,
             textInputAction: TextInputAction.done,
             maxLength: 2,
@@ -97,6 +98,7 @@ class _HomepageState extends State<Homepage> {
         title: SizedBox(
           height: 50,
           child: WidgetMask(
+            childSaveLayer: true,
             blendMode: BlendMode.srcATop,
             child: const Text(
               'flutter',
